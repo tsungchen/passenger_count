@@ -5,19 +5,21 @@ PROJECT(PassengerStat CXX)
 set(OpenCV_Version 300)
 set(OpenCV_PATH "D:/opensource/opencv/build/")
 set(OpenCV_INCLUDE_DIR "${OpenCV_PATH}include")
-set(OpenCV_LIBRARY_DIR "${OpenCV_PATH}x64/vc11/lib/Debug")
+set(OpenCV_LIBRARY_DIR "${OpenCV_PATH}x64/vc11/lib")
 set(OpenCV_LIBS 
    opencv_core${OpenCV_Version}d.lib 
-	opencv_higui${OpenCV_Version}d.lib 
+	opencv_highgui${OpenCV_Version}d.lib 
 	opencv_imgproc${OpenCV_Version}d.lib 
-	opencv_contrib${OpenCV_Version}d.lib 
-	opencv_stitching${OpenCV_Version}d.lib 
+#	opencv_contrib${OpenCV_Version}d.lib 
+#	opencv_stitching${OpenCV_Version}d.lib 
 	opencv_features2d${OpenCV_Version}d.lib
 	)
 
 INCLUDE_DIRECTORIES(${OpenCV_INCLUDE_DIR})
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)
 LINK_DIRECTORIES(${OpenCV_LIBRARY_DIR})
+LINK_DIRECTORIES(${CMAKE_BINARY_DIR})
+
 
 IF(NOT IS_DIRECTORY CMAKE_BUILD_TYPE)
   SET(${CMAKE_BUILD_TYPE} Release ... FORCE)
@@ -66,16 +68,19 @@ TARGET_LINK_LIBRARIES(
 	${OpenCV_LIBS}
 )
 
-add_definitions(LibPassengeStat -DPASSEGER_API_EXPORT)
+#add_definitions(LibPassengeStat -DPASSEGER_API_EXPORT)
 
 # test 
 ADD_EXECUTABLE(
     test_passenge_stat
 	src/test/test_passenge_stat.cpp
 )
-TARGET_COMPILE_FEATURES(test_passenge_stat PRIVATE cxx_range_for)
+
+# TARGET_COMPILE_FEATURES(test_passenge_stat PRIVATE cxx_range_for)
+
 TARGET_LINK_LIBRARIES(
     test_passenge_stat
+	LibPassengeStat.lib
 	${OpenCV_LIBS}
 )
 
