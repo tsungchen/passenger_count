@@ -1,0 +1,4 @@
+D:/VSWork/PassengeStat/build/vc11/CMakeFiles/LibPassengeStat.dir
+D:/VSWork/PassengeStat/build/vc11/CMakeFiles/test_passenge_stat.dir
+D:/VSWork/PassengeStat/build/vc11/CMakeFiles/ALL_BUILD.dir
+D:/VSWork/PassengeStat/build/vc11/CMakeFiles/ZERO_CHECK.dir

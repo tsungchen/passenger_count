@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\VSWork\PassengeStat\src\passenger_stat\multi_target_tracker.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\VSWork\PassengeStat\src\passenger_stat\passenger_counter.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\VSWork\PassengeStat\src\passenger_stat\passenger_stat.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\VSWork\PassengeStat\src\passenger_stat\single_target_tracker.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\VSWork\PassengeStat\src\passenger_stat\target_detector.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\VSWork\PassengeStat\include\passenger_stat\multi_target_tracker.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\VSWork\PassengeStat\include\passenger_stat\passenger_counter.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\VSWork\PassengeStat\include\passenger_stat\passenger_stat.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\VSWork\PassengeStat\include\passenger_stat\single_target_tracker.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\VSWork\PassengeStat\include\passenger_stat\target_detector.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\VSWork\PassengeStat\include\passenger_stat\passenger_stat_def.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\VSWork\PassengeStat\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{F2B82224-FB98-3204-A21C-9095FF2B3002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{D12293BF-3217-3D0F-AE71-C32886223161}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

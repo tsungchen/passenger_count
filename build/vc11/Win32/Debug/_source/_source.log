@@ -1,0 +1,26 @@
+﻿生成启动时间为 2016/12/11 23:16:24。
+     1>项目“D:\VSWork\PassengeStat\build\vc11\_source.vcxproj”在节点 2 上(CustomBuild 个目标)。
+     1>CustomBuild:
+         Building Custom Rule D:/VSWork/PassengeStat/CMakeLists.txt
+         CMake is re-running because D:\VSWork\PassengeStat\build\vc11\CMakeFiles\generate.stamp is out-of-date.
+           the file 'D:/VSWork/PassengeStat/CMakeLists.txt'
+           is newer than 'D:\VSWork\PassengeStat\build\vc11\CMakeFiles\generate.stamp.depend'
+           result='-1'
+         -- Configuring done
+         CMake Error at CMakeLists.txt:49 (ADD_LIBRARY):
+           Cannot find source file:
+         
+             opencv_core310d.lib
+         
+           Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+           .hxx .in .txx
+         
+         
+     1>CUSTOMBUILD : CMake error : CMake can not determine linker language for target: LibPassengeStat
+         -- Generating done
+         -- Build files have been written to: D:/VSWork/PassengeStat/build/vc11
+     1>已完成生成项目“D:\VSWork\PassengeStat\build\vc11\_source.vcxproj”(CustomBuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.52
